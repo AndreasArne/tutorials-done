@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+    <div class="container" role="main">
+        <div class="page-header">
+            <h2>Result of mission {{mission["name"]}}</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>You made it: {{mission["result"]["res"]}}</h2>
+            </div>
+            <div class="col-sm-4">
+                <h3>Heroes who battled</h3>
+                {% include 'display_heroes_table.html' %}
+            </div>
+            <div class="col-sm-4">
+                <h3>Villains who battled</h3>
+                {% include 'display_villains_table.html' %}
+            </div>
+        </div>
+    </div>
+{% include 'footer.html' %}

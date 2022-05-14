@@ -1,0 +1,22 @@
+<table class='table'>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>HP</th>
+            <th>Defense</th>
+            <th>DMG</th>
+            <th>Catch rate</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for vill in villains %}
+        <tr>
+            <td>{{vill["name"]}}</td>
+            <td>{{vill["hp"]}}</td>
+            <td>{{vill["defense"]}}</td>
+            <td>{{vill["dmg"]}}</td>
+            <td>{{vill["catch_rate"]}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

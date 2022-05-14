@@ -1,0 +1,22 @@
+<table class='table'>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>HP</th>
+            <th>Defense</th>
+            <th>DMG</th>
+            <th>Catch rate</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for char in characters %}
+        <tr>
+            <td>{{char["name"]}}</td>
+            <td>{{char["hp"]}}</td>
+            <td>{{char["defense"]}}</td>
+            <td>{{char["dmg"]}}</td>
+            <td>{{char["catch_rate"]}}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

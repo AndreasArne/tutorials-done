@@ -1,0 +1,20 @@
+<table class='table'>
+    {% for miss in missions %}
+        <thead>
+            <tr>
+                <th><a href="/setup_mission?name={{miss["name"]}}">{{miss["name"]}}</a></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for vill in miss["villains"] %}
+                <tr>
+                    <td>{{vill["name"]}}</td>
+                    <td>{{vill["hp"]}}</td>
+                    <td>{{vill["defense"]}}</td>
+                    <td>{{vill["dmg"]}}</td>
+                    <td>{{vill["catch_rate"]}}</td>
+                </tr>
+            {% endfor %}
+    {% endfor %}
+    </tbody>
+</table>

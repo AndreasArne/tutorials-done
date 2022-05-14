@@ -1,0 +1,30 @@
+<form role='form' method='POST' action='/start/mission'>
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Name</th>
+                <th>HP</th>
+                <th>Defense</th>
+                <th>DMG</th>
+                <th>Catch rate</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for char in characters %}
+            <tr>
+                <td>
+                    <input type="checkbox" name="{{char["name"]}}">
+                </td>
+                <td>{{char["name"]}}</td>
+                <td>{{char["hp"]}}</td>
+                <td>{{char["defense"]}}</td>
+                <td>{{char["dmg"]}}</td>
+                <td>{{char["catch_rate"]}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <input type='hidden' name='mission' value='{{mission["name"]}}'/>
+    <button type='submit' class='btn btn-default'>Start fight</button>
+</form>

@@ -1,0 +1,13 @@
+{% if av %}
+<p>Villains will be randomized and added when you press Add.</p>
+<form role='form' method='POST' action='/add/mission'>
+    <div class='form-group'>
+        <label for='name'>Namn: </label>
+        <input type='text' name='name' class='form-control' />
+    </div>
+    <button type='submit' class='btn btn-default'>Lägg till</button>
+</form>
+{% else %}
+<h2>No villains available</h2>
+<p>Go beat-up some bad guys</p>
+{% endif %}
