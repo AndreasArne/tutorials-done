@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--orange: #f73c00;
+	--bg: #22292f;
+	--green: #00f780;
+	--dark: #4f4f4f;
+}
+
+body {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: whitesmoke;
+}
