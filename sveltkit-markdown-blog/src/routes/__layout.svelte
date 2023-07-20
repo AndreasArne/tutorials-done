@@ -14,10 +14,10 @@
   import Header from '$lib/components/Header.svelte'
   import '$lib/styles/style.scss'
   import { fade } from 'svelte/transition'
-  import { prefetch, prefetchRoutes } from '$app/navigation'
+  // import { prefetch, prefetchRoutes } from '$app/navigation'
 
-  prefetch('/blog') // Loads the blog page in the background
-  prefetchRoutes() // Loads ALL routes in the background. can be expensive if we habe many pages with much data
+  // prefetch('/blog') // Loads the blog page in the background
+  // prefetchRoutes() // Loads ALL routes in the background. can be expensive if we habe many pages with much data
 
 export let currentRoute
 </script>
